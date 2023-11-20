@@ -11,7 +11,7 @@ import {
   GetSecretValueCommand,
 } from "@aws-sdk/client-secrets-manager";
 
-const secret_name = "56streams";
+const secret_name = config.secret_name;
 
 const client = new SecretsManagerClient({
   region: "ap-southeast-2",
